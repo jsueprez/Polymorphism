@@ -8,13 +8,13 @@ This project shows off concepts about one fundamental principle of the OOP, the 
   - [Table of Contents](#table-of-contents)
   - [About the Project](#about-the-project)
     - [Polymorphism](#polymorphism-1)
-      - [Virtual functions](#virtual-functions)
+    - [Virtual functions](#virtual-functions)
       - [Static Polymorphism](#static-polymorphism)
       - [Dynamic Polymorphism](#dynamic-polymorphism)
     - [Function overloading](#function-overloading)
     - [Function overriding](#function-overriding)
-      - [Pure virtual (abstract) functions](#pure-virtual-abstract-functions)
-      - [Interface class](#interface-class)
+    - [Pure virtual (abstract) functions](#pure-virtual-abstract-functions)
+    - [Interface class](#interface-class)
   - [Getting Started](#getting-started)
     - [Dependencies](#dependencies)
     - [Getting the Source](#getting-the-source)
@@ -32,7 +32,7 @@ This project shows off concepts about one fundamental principle of the OOP, the 
 ### Polymorphism 
 This is one of the main features of OOP and it refers to the ability to exist in multiple forms. Multiple definitions can be given to a single interface. ```virtual``` functions are key to polymorphism.
 
-#### Virtual functions
+### Virtual functions
 These are special type of functions that, when called, resolves to the most-derived version of the function that exists between the base and derived class. This capability is known as polymorphism. A derived function is considered a match if it has the same signature (name, parameter types, and whether it is const) and return type as the base version of the function. Such functions are called overrides.
 
 When a derived class is assigned to a base class object, the base class only receives a copy of the base portion of the derived class. This is called object slicing.
@@ -127,7 +127,7 @@ class Triangle : public Shape
     }
 }
 ```
-#### Pure virtual (abstract) functions
+### Pure virtual (abstract) functions
 These are functions that has no body at all(no implementation), they simply acts as a paceholder that is meant to be redefined by the derived classes. A virtual function can be made pure virtual/abstract by adding “= 0” to the end of the virtual function prototype. A class containing a pure virtual function is called an abstract class, and can not be instantiated. A class that inherits pure virtual functions must concretely define them or it will also be considered abstract.
 
 ``` c++
@@ -141,7 +141,7 @@ public:
 };
 ```
 
-#### Interface class
+### Interface class
 An interface class is a class that has no member variables, and where all of the functions are pure virtual! In other words, the class is purely a definition, and has no actual implementation. Interfaces are useful when you want to define the functionality that derived classes must implement, but leave the details of how the derived class implements that functionality entirely up to the derived class.
 
 Interface classes are often named beginning with an I.
