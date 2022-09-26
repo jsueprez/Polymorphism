@@ -1,6 +1,6 @@
 # Polymorphism
 
-This project shows off concepts about one fundamental principle of the OOP, the inheritance.
+This project shows off concepts about one fundamental principle of the OOP, the polymorphism.
 
 ## Table of Contents
 
