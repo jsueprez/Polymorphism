@@ -1,9 +1,14 @@
 #include <iostream>
 
-using namespace std;
+using std::cout;
+
+/* functions has external linkage by default,
+ * so I can use this function defined in other files
+ * just placing a forward declaration */
+void test_forms();
 
 int main()
 {
-  cout << "Hello World!" << endl;
+  test_forms();
   return 0;
 }

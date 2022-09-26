@@ -7,11 +7,12 @@ class Shape
 {
 public:
     virtual std::ostream& print(std::ostream& out) const = 0;
-    friend std::ostream& operator<<(std::ostream& out,  const Shape& p)
+    friend std::ostream& operator<<(std::ostream& out, const Shape& x)
     {
-        return p.print(out);
-    }
+        return x.print(out);
+    };
     virtual ~Shape() = default;
+
 };
 
 #endif // SHAPE_H

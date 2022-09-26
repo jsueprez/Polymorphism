@@ -16,7 +16,8 @@ public:
 
     };
 
-    std::ostream& print(std::ostream& out) const;
+    std::ostream& print(std::ostream& out) const override;
+    int get_radius() const;
 
 };
 
