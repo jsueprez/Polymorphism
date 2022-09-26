@@ -16,10 +16,19 @@ set(CMAKE_CXX_EXTENSIONS ON)
 ######################################################################################
 set(CORE_SOURCE
     src/module/dummyLib.cpp
+    src/module/forms/shape.cpp
+    src/module/forms/triangle.cpp
+    src/module/forms/circle.cpp
+    src/module/forms/point.cpp
+    src/module/forms/test_forms.cpp
 )
 
 set(CORE_HEADERS
     src/module/dummyLib.h
+    src/module/forms/shape.h
+    src/module/forms/triangle.h
+    src/module/forms/circle.h
+    src/module/forms/point.h
 )
 
 file(GLOB TEST_SOURCE
